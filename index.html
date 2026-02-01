@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-time" id="currentTime"></div>
+            <div class="header-date" id="currentDate"></div>
+        </header>
+
+        <div class="grid-container">
+            <!-- Üst Sol: Dünya Haberleri -->
+            <div class="widget widget-news">
+                <div class="widget-header">
+                    <h2>🌍 Dünya Haberleri</h2>
+                    <span class="update-indicator" id="newsUpdate"></span>
+                </div>
+                <div class="widget-content" id="worldNews">
+                    <div class="loading">Yükleniyor...</div>
+                </div>
+            </div>
+
+            <!-- Üst Orta: Outlook Mail -->
+            <div class="widget widget-mail">
+                <div class="widget-header">
+                    <h2>📧 Mail</h2>
+                    <span class="update-indicator" id="mailUpdate"></span>
+                </div>
+                <div class="widget-content" id="mailContent">
+                    <div class="loading">Yükleniyor...</div>
+                </div>
+            </div>
+
+            <!-- Üst Sağ: Kripto -->
+            <div class="widget widget-crypto">
+                <div class="widget-header">
+                    <h2>₿ Kripto</h2>
+                    <span class="update-indicator" id="cryptoUpdate"></span>
+                </div>
+                <div class="widget-content" id="cryptoContent">
+                    <div class="loading">Yükleniyor...</div>
+                </div>
+            </div>
+
+            <!-- Alt Sol: Ekonomik Haberler -->
+            <div class="widget widget-economy">
+                <div class="widget-header">
+                    <h2>💼 Ekonomik Haberler</h2>
+                    <span class="update-indicator" id="economyUpdate"></span>
+                </div>
+                <div class="widget-content" id="economyNews">
+                    <div class="loading">Yükleniyor...</div>
+                </div>
+            </div>
+
+            <!-- Alt Orta-Sağ: Kültür Sanat -->
+            <div class="widget widget-culture">
+                <div class="widget-header">
+                    <h2>🎬 Kültür & Sanat</h2>
+                    <span class="update-indicator" id="cultureUpdate"></span>
+                </div>
+                <div class="widget-content" id="cultureContent">
+                    <div class="loading">Yükleniyor...</div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Son güncelleme: <span id="lastUpdate"></span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
