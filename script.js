@@ -1,6 +1,6 @@
 // API Anahtarları - Bunları dolduracaksınız
 const API_KEYS = {
-    NEWS: 'YOUR_NEWSAPI_KEY', // https://newsapi.org
+    NEWS: '37ab20c153ba4bee9213f466ecc48047', // https://newsapi.org
     CRYPTO: '', // CoinGecko ücretsiz, key gerektirmez
     // Mail için ayrı setup gerekiyor
 };
