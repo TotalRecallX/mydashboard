@@ -138,7 +138,7 @@ async function fetchNews(type = 'world') {
         
         const query = type === 'world' ? 'world OR international OR global' : 'economy OR finance OR business OR market';
         const response = await fetch(
-            `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&pageSize=10&apiKey=${API_KEYS.NEWS}`
+            `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&pageSize=10&apiKey=${37ab20c153ba4bee9213f466ecc48047}`
         );
         
         if (!response.ok) throw new Error('Haberler alınamadı');
