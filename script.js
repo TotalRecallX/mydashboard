@@ -115,7 +115,7 @@ async function fetchNews(type = 'world') {
         
         updateIndicator(indicatorId, true);
         
-        if (API_KEYS.NEWS === 'YOUR_NEWSAPI_KEY') {
+        if (API_KEYS.NEWS === '37ab20c153ba4bee9213f466ecc48047') {
             document.getElementById(targetId).innerHTML = `
                 <div class="news-item">
                     <div class="news-item-title">API Anahtarı Gerekli</div>
